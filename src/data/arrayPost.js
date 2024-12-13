@@ -11,7 +11,7 @@ const posts = [
     {
       id: 2,
       title: "Titolo del Post",
-      image: '',
+      image: 'pasta_barbabietola.jpeg',
       content:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
       tags: ["js", "css"],

@@ -6,6 +6,9 @@ const AppCard = ({title, image, content, tags, published}) => {
   }
     const imagePath = `/images/${image}`
 
+  //tags
+  
+
 
   return (
     
@@ -14,10 +17,13 @@ const AppCard = ({title, image, content, tags, published}) => {
         <img src={imagePath} alt="" />
       </div>
       <div className={style.cardBottom}>
-        <h4 className={style.title}>{title}</h4>
+        <h4 className={style.title}>{title}</h4> 
+        {tags.map((curTag, index) => <span key={index}>{curTag}</span>)}
+        
         <p>
           {content}
         </p>
+        
         <button className={style.btn}>LEGGI DI PIU</button>
       </div>
       </div>

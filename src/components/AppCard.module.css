@@ -18,6 +18,7 @@ img {
 
 .title {
     padding: 0.8rem 0;
+    display: inline-block;
 }
 
 .btn {
@@ -29,3 +30,4 @@ img {
     margin: 1rem 0;
     font-weight: bold;
 }
+
