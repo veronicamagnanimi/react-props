@@ -1,29 +1,27 @@
 import style from "./AppCard.module.css";
 
-const AppCard = () => {
-    const img = {
-        image: "/images/ciambellone.jpeg"
-    };
+const AppCard = ({title, image, content, tags, published}) => {
+  if(!published) {
+    return null;
+  }
+    const imagePath = `/images/${image}`
 
 
   return (
-    <div className="container">
+    
       <div className={style.card}>
       <div className="cardTop">
-        <img src={img.image} alt="" />
+        <img src={imagePath} alt="" />
       </div>
       <div className={style.cardBottom}>
-        <h4 className={style.title}>Titolo del post</h4>
+        <h4 className={style.title}>{title}</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          {content}
         </p>
         <button className={style.btn}>LEGGI DI PIU</button>
       </div>
       </div>
-    </div>
+    
   );
 };
 
